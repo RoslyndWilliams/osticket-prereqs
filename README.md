@@ -89,7 +89,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Download osTicket (download from within lab files: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6))
 - Right-click on the file and select Extract All
 	- Open the new osTicket folder
-		- Copy the “upload” folder into C:\inetpub\wwwroot
+		- Copy the Upload folder into C:\inetpub\wwwroot
 		- Rename “upload” to “osTicket”
 
 
@@ -221,7 +221,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - To create tickets as a user: http://localhost/osTicket/
 - To log in as an Admin or helpdesk professional: http://localhost/osTicket/scp
 
-<h3>Step 13: Cleanup.</h3>
+<h3>Step 13: Post-Intallation Cleanup</h3>
 
 - Go to C: > inetpub > wwwroot > osTicket > Setup
     - Delete the contents in the Setup folder
