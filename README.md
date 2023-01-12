@@ -34,9 +34,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h3>Step 2: Install and Enable Internet Information Services (IIS) in Windows</h3>
 
 - At the bottom left, search for Control Panel
-- Underneath Programs, select Uninstall A Program
-- On the left side of the screen, select Turn Windows Features On Or Off
-- Select Internet Information Services, and select OK
+- Underneath Programs, select Uninstall a Program
+- On the left side of the screen, select Turn Windows Features On or Off
+- Select Internet Information Services (IIS), and select OK
 
 
 <p align="center">
@@ -44,11 +44,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 
-<h3>Step 3: Download, Install, and Open Web Platform Installer
+<h3>Step 3: Download, Install, and Open the Web Platform Installer
 </h3>
 
 - osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
-	- Download Web Platform Installer > select Download Anyway > at the top right, select Open File >
+	- Download Web Platform Installer > select Download Anyway > at the top right, select Open File
 	- Follow the prompt to install Web Platform Installer
 	- Open the Web Platform Installer
 
@@ -56,12 +56,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/0On2vKd.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/V4p94mP.png" height="80%" width="80%" alt="Azure Free Services"/>
 </p>
 
-- Once Web Platform Installer is open, go to the top right and search for MySQL 5.5
+- Once Web Platform Installer is open, go to the top right of the screen and search for MySQL 5.5
 - Go to MySQL Windows 5.5 and click Add
 - Go to the top right again and search for PHP
 	- Adjust the list to Sort by "name"
 - Add all simple versions of x86 PHP up until 7.3
-- Select Install at the bottom and it will tell you to create a username and password to finish the installation
+- Select Install at the bottom of the screen and it will tell you to create a username and password to complete the installation
 
 <p align="center">
 <img src="https://i.imgur.com/uWAVcRG.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/MQmZfht.png" height="80%" width="80%" alt="Azure Free Services"/>
@@ -70,8 +70,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   - Username: root
   - Password: Password1
-- Follow the prompt to finish the installation
-- You might get a message saying some products have failed to install
+- Follow the prompt to complete the installation
+- You might get a message stating that "some products have failed to install"
 	- Ignore that message and select Finish
 - Download and install the following from within the lab files: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
   - PHP Version 7.3.8
@@ -90,7 +90,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Right-click on the file and select Extract All
 	- Open the new osTicket folder
 		- Copy the Upload folder into C:\inetpub\wwwroot
-		- Rename “upload” to “osTicket”
+		- Rename “Upload” to “osTicket”
 
 
 <p align="center">
@@ -104,10 +104,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Search for Internet Information Services (IIS) and select Open
 	- Select Restart on the right-hand side 
-- On the left, select Virtualmachine > Sites > Default Website > osTicket
-- On the right, click “Browse *:80”
+- On the left side of the screen, select Virtualmachine > Sites > Default Website > osTicket
+- On the right side of the screen, click “Browse *:80”
 	- This should open osTicket in your web browser
-- Before continuing, head back to and open IIS
+- Before continuing, head back to IIS
+- Open IIS
 
 
 <p align="center">
@@ -119,7 +120,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Go back to IIS > Sites > Default Web Site > osTicket
 - Double-click PHP Manager
-- Click “Enable or Disable an Extension” at the bottom under “PHP Extensions”
+- Click “Enable or Disable an Extension” at the bottom of the screen under PHP Extensions
 - Right-click and enable the following
     - php_imap.dll (Might be already enabled)
     - php_intl.dll
@@ -131,10 +132,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/GQfPOU8.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/iCK6vst.png" height="80%" width="80%" alt="Azure Free Services"/>
 </p>
 
-<h3>Step 7: Refresh the osTicket Site in Your Browser and Observe the Changes
+<h3>Step 7: Refresh the osTicket Site in Your Browser
 </h3>
 
-- Intl Extension should now have a green checkmark next to it
+- Refresh the osTicket site adn observe the change
+	- Intl Extension should now have a green checkmark next to it
 
 
 <p align="center">
@@ -146,14 +148,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  
 - Open Windows Explorer and select C: > inetpub > wwwroot > osTicket > include
 	- Rename the following file:
-		- From: C:\inetpub\wwwroot\osTicket\include\ost-SAMPLEconfig.php
-		- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+		- From: ost-SAMPLEconfig.php
+		- To: ost-config.php
 
 
 <p align="center">
 <img src="https://i.imgur.com/DDTR8CD.png" height="80%" width="80%" alt="Azure Free Account"/>
 
-<h3>Step 9: Assign Permissions: ost-config.php</h3>
+<h3>Step 9: Assign Permissions to ost-config.php</h3>
 
 - Right-click ost-config.php 
 - Open Properties > Security > Advanced > Permissions 
@@ -162,7 +164,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/pcFvK9d.png" height="80%" width="80%" alt="Azure Free Account"/>
 
-- Afterwards, select Add > select a Principal > type in "everyone" > select Check Names > select OK
+- Afterwards, select Add > select Principal > type in "everyone" > select Check Names > select OK
 	- Allow everyone full control (check all boxes) > Select apply > OK
 
 <p align="center">
@@ -188,7 +190,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Head to osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 	- Download and install HeidiSQL
-- Open HeidiSQL > Select New at the bottom-left corner 
+- Open HeidiSQL > Select "New" at the bottom-left corner of the screen
    - User: root
    - Password: Password
 - Select Open
@@ -211,7 +213,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/Npqj9Us.png" height="80%" width="80%" alt="Azure Free Account"/>
 
 
-🎉Congratulations! You have sucessfully installed osTicket!🎉
+🎉Congratulations! You have sucessfully installed osTicket adn all of its pre-requisite files!🎉
 
 <p align="center">
 <img src="https://i.imgur.com/F52ypHn.png" height="80%" width="80%" alt="Azure Free Account"/>
