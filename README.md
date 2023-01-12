@@ -235,4 +235,4 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>	
 
 
-Click [here](https://github.com/roslyndwilliams/osTicket-post-installing) to move on to part 2 of this tutorial!
+Click [here](https://github.com/roslyndwilliams/post-install-config) to move on to part 2 of this tutorial!
